@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "id": "basefinder",
+  "version": "${version}",
+  "name": "BaseFinder",
+  "description": "Scans loaded chunks for player-built structures. Right Shift opens the GUI.",
+  "authors": ["you"],
+  "environment": "client",
+  "entrypoints": { "client": ["com.example.basefinder.BaseFinderMod"] },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
