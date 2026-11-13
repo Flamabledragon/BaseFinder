@@ -15,10 +15,9 @@ jobs:
         with:
           gradle-version: 9.2.1
       - run: gradle build
-        working-directory: basefinder
       - uses: actions/upload-artifact@v4
         with:
           name: basefinder-jar
           path: |
-            basefinder/build/libs/*.jar
-            !basefinder/build/libs/*-sources.jar
+            build/libs/*.jar
+            !build/libs/*-sources.jar
